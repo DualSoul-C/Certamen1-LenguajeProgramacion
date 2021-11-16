@@ -246,8 +246,8 @@ void petri2(int k){
 		insertarArista(trans,"B",1);
 		strcat(trans,"t");
 		strcat(place,"p");
-		
 	}
+	visualizarGrafo();
 }
 void yyerror(char *s, ...){
   va_list ap; va_start(ap, s);
