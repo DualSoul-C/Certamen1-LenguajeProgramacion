@@ -125,7 +125,7 @@ void recorrido(char name1[50], char name2[50]){
          if(aux==NULL && aux2==NULL){
      	 	printf("Error: Place no encontrado\n");
 	 }
-	 else if((aux->token>-1) || (aux2->token>-1)){
+	 else if((aux->token==-1) || (aux2->token==-1)){
 	 	printf("Error: Union valida para place/place\n");
 	 }
 	 else{
