@@ -203,42 +203,6 @@ void reiniciar(){
 	}
 }
 
-void trigger(char name1[50], char name2[50]){
-	Nodo*aux=inicio,*aux2=inicio;
-	if(inicio!=NULL){
-	   while(aux!=NULL){
-  	    	if(strcmp(aux->name,name1)==0)
-  		    break;
-	  	    aux=aux->siguiente;
-           }
-           while(aux2!=NULL){
-  	     	if(strcmp(aux2->name,name2)==0)
-  		    break;
-	     	    aux2=aux2->siguiente;
-           }
-           if(aux==NULL && aux2==NULL){
-     	 	printf("Error: Place no encontrado\n");
-	   }
-	   else{
-	   	if(aux->adyacencia!=NULL){
-	   	    Arista*a=aux->adyacencia;
-		    while(a!=NULL){
-		    	printf("%d/",a->peso);
-		    	if(a->vrt->visitado==0){
-		    	    printf("%s/",a->vrt->name);
-			    if(strcmp(a->vrt->name,name2)==0){
-			    	printf("%d\n",a->vrt->token);
-			    }
-			    a->vrt->visitado=1;	
-			}
-			a=a->siguiente;
-		    }
-		    reiniciar();
-	   	}
-	   }
-	}
-}
-
 void petri1(int k){
 	insertarNodo("p", k);
 	insertarNodo("t",-1);

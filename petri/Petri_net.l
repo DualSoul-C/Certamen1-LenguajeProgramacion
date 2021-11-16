@@ -12,7 +12,6 @@ Print {return PRINT;}
 Compleja1 {return COM1;}
 Compleja2 {return COM2;}
 Union {return UNION;}
-Trigger {return TRIGGER;}
 [A-Za-z]+ { strcpy(yylval.s, yytext); return NAME; }
 [0-9]+ { yylval.d = atoi(yytext); return NUMBER; }
 \n {return EOL;}

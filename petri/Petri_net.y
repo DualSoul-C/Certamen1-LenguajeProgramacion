@@ -40,7 +40,6 @@ arco: ARCO'('NAME','NAME','NUMBER')'  {insertarArista($3,$5,$7);}
  ;
 func: COM1'('NUMBER')' {petri1($3);}
  | COM2'('NUMBER')' {petri2($3);}
- | TRIGGER'('NAME','NAME')' {trigger($3,$5);}
  | PRINT {visualizarGrafo();}
  | UNION'('NAME','NAME')'{recorrido($3,$5);} 
  ;

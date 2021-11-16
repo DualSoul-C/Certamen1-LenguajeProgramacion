@@ -35,6 +35,5 @@ void recorridoAnchura(char name[50]);
 void insertarCola(Nodo* aux);
 Nodo*desencolar();
 void reiniciar();
-void trigger(char name1[50], char name2[50]);
 void petri1(int k);
 void petri2(int k);
