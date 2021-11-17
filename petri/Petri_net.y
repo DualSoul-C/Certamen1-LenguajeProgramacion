@@ -5,12 +5,11 @@
 %}
 
 %union{
-  struct nodo *n;
-  struct arco *a;
   int d;
   char s[50];
 }
 
+/* declaremos tokens*/
 %token PLACE
 %token TRANS
 %token ARCO
